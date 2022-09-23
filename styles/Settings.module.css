@@ -1,0 +1,21 @@
+.Container {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.Card {
+    background-color: #fff;
+    border-width: 0 0 0 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #ee1b24, #a43076, #683d7e) 1;
+    box-shadow: 0 0 20px rgba(34, 30, 31, 0.7);
+    padding: 50px;
+    font-size: 20px;
+    /*min-height: 380px;*/
+    /*width: calc(100% - 80px);*/
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: left;
+}

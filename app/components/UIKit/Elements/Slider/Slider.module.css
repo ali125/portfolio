@@ -1,0 +1,53 @@
+.container {
+    position: relative;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin: 2px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    transition: all 0.8s ease-in-out;
+}
+
+.dotActive {
+    width: 25px;
+    background-color: #EE1B24;
+}
+
+.item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.itemActive {
+    opacity: 1;
+    z-index: 2;
+}
+

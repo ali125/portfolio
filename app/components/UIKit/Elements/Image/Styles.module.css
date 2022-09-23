@@ -1,0 +1,10 @@
+.Image {
+    display: block;
+    position: relative;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+.Image span {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@contexts/*": ["app/context/*"],
+
+      "@UIKit/*": ["app/components/UIKit/*"],
+      "@containers/*": ["app/containers/*"],
+      "@components/*": ["app/components/*"],
+      "@pages/*": ["app/pages/*"],
+
+      "@config/*": ["app/config/*"],
+
+      "@services/*": ["app/services/*"],
+
+      "@utils/*": ["app/utils/*"],
+      "@hooks/*": ["app/hooks/*"],
+      "@constants/*": ["app/utils/constants/*"],
+      "@helpers": ["app/utils/helpers"],
+      "@helpers/*": ["app/utils/helpers/*"],
+
+      "@adaptors/*": ["app/adaptors/*"],
+      "@objects/*": ["app/api/objects/*"],
+      "@api/*": ["app/api/*"],
+
+      "@i18n/*": ["app/i18n/*"]
+    }
+  }
+}

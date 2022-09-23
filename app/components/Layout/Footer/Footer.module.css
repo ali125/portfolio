@@ -1,0 +1,58 @@
+.container {
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 16px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    padding: 40px;
+}
+.logoImg {
+    height: 130px;
+    object-fit: contain;
+}
+.logoText {
+    margin-top: -12px;
+}
+.contact {
+    padding: 40px;
+}
+.contact h4 {
+    margin-bottom: 8px;
+}
+.contact a {
+    font-size: 18px;
+    display: block;
+    padding: 8px;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+.contact a:hover {
+    color: #EE1B24;
+}
+.copyright {
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .logo,
+    .contact {
+        padding: 16px;
+    }
+    .copyright,
+    .contact a,
+    .contact h4 {
+        text-align: center;
+    }
+}

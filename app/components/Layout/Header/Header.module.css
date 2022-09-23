@@ -1,0 +1,105 @@
+.container {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    composes: Container from '/styles/Settings.module.css';
+}
+
+.logo {
+    display: block;
+    width: 180px;
+    height: 40px;
+}
+
+.logoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.link {
+    padding: 8px 16px;
+    margin: 8px;
+}
+
+.toggleClose,
+.toggleBtn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 16px 0;
+    }
+    .toggleBtn {
+        display: block;
+        cursor: pointer;
+    }
+    .toggleBtn svg {
+        font-size: 32px;
+    }
+    .links {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        transform: translate(-100%, 0);
+        padding: 16px;
+        z-index: 20;
+        opacity: 0;
+        transition: transform 400ms ease-in-out, opacity 300ms ease-in-out;
+    }
+    .linksOpen {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    .link {
+        font-weight: 600;
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 16px;
+    }
+
+    .linkBtn {
+        font-weight: 600;
+        font-size: 18px;
+        min-width: fit-content;
+        width: 250px;
+        max-width: 90%;
+    }
+
+    .toggleClose {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        padding: 16px;
+        cursor: pointer;
+    }
+    .toggleClose svg {
+        font-size: 32px;
+    }
+}

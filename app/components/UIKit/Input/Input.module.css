@@ -1,0 +1,65 @@
+.Container {
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #ffff;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Container svg {
+  color: #999999;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.Invalid {
+  border: solid 1px #EE1B24;
+  background-color: #fff7eb;
+}
+
+.Wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.Label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.ValidationError {
+  font-size: 14px;
+  font-weight: 400;
+  color: #EE1B24;
+  display: block;
+  text-align: left;
+  margin-top: -8px;
+}
+
+.Clear {
+  color: #757575;
+}
+
+.Input {
+  font-size: 16px;
+  flex: 1;
+  outline: none;
+  appearance: none;
+  background: none;
+  border: none;
+  resize: none;
+}
+
+.Input::placeholder {
+  font-size: 14px;
+}
