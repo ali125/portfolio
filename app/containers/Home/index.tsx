@@ -1,16 +1,12 @@
 import React from 'react';
-import HomeIntro from "./HomeIntro";
-import HomeUsage from "./HomeUsage";
-import HomeSize from "./HomeSize";
-import HomeYoungWomen from "./HomeYoungWomen";
+import HomeIntro from "@containers/Home/HomeIntro";
+import HomeAbout from "@containers/Home/HomeAbout";
 
 const Home = () => {
     return (
         <>
             <HomeIntro />
-            <HomeUsage />
-            <HomeSize />
-            <HomeYoungWomen />
+            <HomeAbout />
         </>
     );
 };

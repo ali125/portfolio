@@ -1,0 +1,42 @@
+.headTitle {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fec544;
+    position: relative;
+    z-index: 10;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.headTitle::before {
+    content: "";
+    position: absolute;
+    background-color: #3f4551;
+    width: 170px;
+    height: 2px;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.headTitle::after {
+    content: "";
+    position: absolute;
+    background-color: #fec544;
+    width: 70px;
+    height: 2px;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.title {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fec544;
+}
