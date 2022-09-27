@@ -1,0 +1,45 @@
+.container {
+    padding: 10px 0;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    margin-right: auto;
+}
+
+.percent {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    color: var(--color-primary);
+    margin-left: auto;
+}
+
+.bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #666;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+

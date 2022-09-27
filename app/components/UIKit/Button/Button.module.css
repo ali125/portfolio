@@ -2,6 +2,7 @@
 
 .btn {
   font-size: 16px;
+  font-weight: 600;
   padding: 10px 20px;
   text-align: center;
   display: inline-flex;
@@ -9,11 +10,13 @@
   align-items: center;
   width: 100%;
   outline: none;
-  border: 1px solid #EE1B24;
+  border: 1px solid var(--color-primary);
   appearance: none;
   border-radius: 25px;
-  color: #ffffff;
-  background: #EE1B24  none;
+  color: #000;
+  /*color: #ffffff;*/
+  /*background: #EE1B24 none;*/
+  background: var(--color-primary);
   text-decoration: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -22,8 +25,9 @@
 }
 
 .btn:hover {
-  color: #EE1B24;
-  background-color: #ffffff;
+  color: var(--color-primary);
+  /*background-color: #ffffff;*/
+  background-color: transparent;
 }
 
 .disabled {
@@ -34,7 +38,7 @@
 
 .inline {
   width: auto;
-  padding: 10px 24px;
+  padding: 12px 32px;
 }
 
 .secondary {
@@ -46,5 +50,5 @@
 .tertiary {
   border-color: #ffedd9;
   background-color: #ffedd9;
-  color: #EE1B24;
+  color: var(--color-primary);
 }

@@ -5,3 +5,10 @@
     align-items: center;
     justify-content: center;
 }
+
+.section {
+    width: 1100px;
+    max-width: 90%;
+    padding: 40px 0;
+    margin: auto;
+}

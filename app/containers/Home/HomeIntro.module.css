@@ -1,7 +1,11 @@
 
 .section {
-    composes: container from './Home.module.css';
     background-color: #070d1b;
+    background-image: url("/images/background/hero-bg.jpg");
+}
+
+.container {
+    composes: container from './Home.module.css';
 }
 
 .intro {

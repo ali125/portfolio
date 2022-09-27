@@ -25,7 +25,7 @@ const PageHead = ({ title = SITE_TITLE, description = SITE_DESCRIPTION }) => {
                 />
                 <meta property="og:url" content={`${hostName}/`} />
                 <link rel="canonical" href={`${hostName}/`} />
-                <link rel="shortcut icon" href="/images/logo/logo-red.png" />
+                <link rel="shortcut icon" href="/favicon.png" />
                 <title>{title}</title>
             </Head>
         );

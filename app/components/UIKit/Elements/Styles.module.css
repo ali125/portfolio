@@ -1,3 +1,23 @@
+.head {
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headSubtitle {
+    font-size: 100px;
+    position: absolute;
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.03);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80px;
+    z-index: 2;
+}
+
 .headTitle {
     width: 100%;
     font-size: 24px;
@@ -5,7 +25,7 @@
     text-transform: uppercase;
     color: #fec544;
     position: relative;
-    z-index: 10;
+    z-index: 4;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -39,4 +59,11 @@
     font-size: 24px;
     font-weight: 400;
     color: #fec544;
+}
+
+@media (max-width: 768px) {
+    .headSubtitle {
+        font-size: 60px;
+        line-height: 65px;
+    }
 }

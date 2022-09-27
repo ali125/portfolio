@@ -17,6 +17,7 @@ interface LinkProps {
   inline?: boolean;
   className?: any;
   icon?: any;
+  download?: string;
   onClick?: () => void;
 }
 

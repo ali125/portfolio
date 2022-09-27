@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import {GitHub, Instagram, LinkedIn, YouTube} from "@mui/icons-material";
 import styles from './HomeIntro.module.css';
 import NavLink from "@UIKit/Elements/NavLink";
 
-const HomeIntro = () => {
-    return (
-        <section id="intro" className={styles.section}>
+const HomeIntro = forwardRef<HTMLDivElement, {}>((props, ref) => (
+    <section id="intro" className={styles.section} ref={ref}>
+        <div className={styles.container}>
             <div className={styles.intro}>
                 <h2 className={styles.heroText}>Hi, I am <span className={styles.heroName}>Morty</span></h2>
                 <p>I am a frontend web developer. I can provide clean code and pixel perfect design.</p>
@@ -33,8 +33,8 @@ const HomeIntro = () => {
                     </li>
                 </ul>
             </div>
-        </section>
-    );
-};
+        </div>
+    </section>
+));
 
 export default HomeIntro;

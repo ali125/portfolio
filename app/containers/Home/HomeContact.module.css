@@ -1,0 +1,130 @@
+.section {
+    background-color: #070d1b;
+}
+.container {
+    composes: section from './Home.module.css';
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 40px 0;
+    margin: auto;
+}
+.content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.contentSide {
+    flex: 1;
+    max-width: 50%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    padding: 12px;
+    transition: all .4s ease-in-out;
+}
+
+.item:hover .icon{
+    color: var(--color-primary)
+}
+
+.body {
+    display: block;
+    margin-left: 16px;
+}
+
+.label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.value {
+    display: block;
+    font-size: 16px;
+    color: #a9adb8;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+}
+
+.socialTitle {
+    composes: label;
+    margin: 50px 0 25px;
+    text-align: center;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    border: 1px solid #555;
+    color: #a9adb8;
+    border-radius: 30px;
+    height: 50px;
+    max-width: 50px;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+
+.socialLink:hover,
+.socialLink:active {
+    max-width: 200px;
+}
+
+.socialIcon {
+    display: block;
+    padding: 12px;
+    box-sizing: content-box;
+}
+
+.socialName {
+    font-weight: 600;
+    display: block;
+    padding-right: 16px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .contentSide {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    .title {
+        margin-bottom: 24px;
+    }
+}

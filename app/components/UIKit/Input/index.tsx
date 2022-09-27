@@ -17,6 +17,7 @@ interface InputProps {
     type?: 'tel' | 'email' | 'string' | 'password' | 'date' | 'file';
     clearable?: boolean;
     multiline?: boolean;
+    rows?: number;
     onChange?: (event: any) => void;
     onSubmit?: (event: any) => void;
     onBlur?: (event: React.FocusEvent) => void;

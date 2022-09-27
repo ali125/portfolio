@@ -19,7 +19,6 @@ type ReturnPromise = {
 export const postContactUs = (params: ContactParams): Promise<ReturnPromise> => {
     return new Promise((resolve, reject) => {
         axios.post(`${process.env.NEXT_PUBLIC_BASE_API_URL}contact-us/`, params).then((res) => {
-            console.log(res);
             resolve(res);
         }).catch(reject);
     })
