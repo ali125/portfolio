@@ -39,6 +39,7 @@ const Home = () => {
             });
         }
     }, [refContact]);
+
     return (
         <HomeLayout active={active}>
             <HomeIntro ref={refIntro} />
