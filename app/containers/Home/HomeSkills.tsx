@@ -10,17 +10,19 @@ const HomeSkills = forwardRef<HTMLDivElement, {}>((props, ref) => (
             <div className={styles.content}>
                 <div className={styles.contentSide}>
                     <h4 className={styles.title}>All the skills that I have in that field of work are mentioned.</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
-                    <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                    <p>With 7+ years of experience in programming, I have been working on many advanced Computer Science projects. During these years, working with professionals has taught me a lot.</p>
+                    <p>Although my recent focus has been on Front-End Development, I am also developing skills in Back-End. Moreover, it is worth mentioning that I really enjoy challenging projects.</p>
                 </div>
                 <div className={styles.contentSide}>
                     <ProgressBar title="ReactJs" percent={80} />
-                    <ProgressBar title="NextJs" percent={80} />
-                    <ProgressBar title="Redux" percent={80} />
+                    <ProgressBar title="NextJs" percent={75} />
+                    <ProgressBar title="Redux" percent={60} />
                     <ProgressBar title="ES5 / ES6" percent={80} />
-                    <ProgressBar title="HTML / CSS" percent={80} />
-                    <ProgressBar title="Docker" percent={80} />
-                    <ProgressBar title="Python" percent={80} />
+                    <ProgressBar title="HTML / CSS" percent={85} />
+                    <ProgressBar title="Docker" percent={30} />
+                    <ProgressBar title="NodeJs" percent={50} />
+                    <ProgressBar title="ExpressJs" percent={50} />
+                    <ProgressBar title="Python" percent={30} />
                 </div>
             </div>
         </div>

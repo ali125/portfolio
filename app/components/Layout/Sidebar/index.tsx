@@ -43,7 +43,7 @@ const Sidebar: React.FC<SidebarProp> = ({ active, isOpen, onClose }) => (
     })}>
         <div className={styles.profile}>
             <div className={styles.author}>
-                <Image src="/images/logo/logo_small.png" className={styles.avatar} />
+                <Image src="/images/profile.jpg" className={styles.avatar} />
             </div>
         </div>
         <div className={styles.content}>
